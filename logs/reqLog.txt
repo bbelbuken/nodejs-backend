@@ -210,3 +210,12 @@
 2025-01-26	18:58:11	fb4d5f6c-6592-4781-8ca8-5a49f64b9625	POST	undefined	/register
 2025-01-26	19:00:59	c5752a05-3a53-4fce-921d-ada5a137adfe	POST	undefined	/register
 2025-01-26	19:02:55	83ebb893-bd7a-4414-93da-2f1d61e9cd7e	POST	undefined	/register
+2025-01-26	20:48:29	b7e9cb1c-0d7e-4daf-90d0-419fa8063f87	GET	undefined	/auth
+2025-01-26	20:49:03	8ee084ab-c9c8-4a2a-bdba-a4422a1bd0f6	GET	undefined	/auth
+2025-01-26	20:49:28	8d8a3f87-33c7-4c39-8e56-bcb02977e1b8	POST	undefined	/auth
+2025-01-26	20:49:36	2ac15877-f852-448e-bcb7-3267ad2a92e7	POST	undefined	/auth
+2025-01-26	20:49:39	bb8208a2-a206-4893-b759-c0b239df3cee	POST	undefined	/auth
+2025-01-26	20:49:43	b9b1a677-ffaa-4f1d-8956-48fc14f19faf	POST	undefined	/auth
+2025-01-26	20:50:50	8f27de00-3074-4cbd-bca6-ff032db59efa	POST	undefined	/register
+2025-01-26	20:51:06	141fbe37-6180-4efa-b3b5-38b98742f422	GET	undefined	/auth
+2025-01-26	20:51:06	16b5cdce-8855-46eb-abf9-fcbf40211d7d	GET	undefined	/css/style.css
