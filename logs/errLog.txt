@@ -1,0 +1,7 @@
+2025-01-25	01:34:06	2ef6b0f2-b255-4931-a414-bdc467bbe314	Error: Not allowed by CORS
+2025-01-25	01:34:06	04271444-4b2e-4b48-9201-c7a20cb78808	Error: Not allowed by CORS
+2025-01-25	01:34:06	016efa03-bc64-4bc0-a684-245dd78242c7	Error: Not allowed by CORS
+2025-01-26	01:02:26	dd918cc8-03b7-4152-8ef4-680e6533de7a	SyntaxError: Unexpected token ''', "'{"id": "2"... is not valid JSON
+2025-01-26	01:02:45	acbe2494-bb02-4c8d-8714-eda2e57d2a0a	SyntaxError: Unexpected token ''', "'{"id": "2"... is not valid JSON
+2025-01-26	01:02:51	f541e3d9-c19c-4c10-badd-c09c5da1fb11	SyntaxError: Unexpected token ''', "'{"id": "2"... is not valid JSON
+2025-01-26	01:03:03	d2bbb6af-ea5a-4828-855c-28646ad8c1ae	SyntaxError: Unexpected token ''', "'{"id": 2,"... is not valid JSON
