@@ -48,6 +48,10 @@ const handleLogin = async (req, res) => {
       JSON.stringify(usersDB.users)
     );
 
+    // cookie is always sent with every request
+    // but httpOnly cookie is not available to JS
+    // so our refresh token is going to be safe
+    // accessToken for FE dev - store it in memory for safety
     res.cookie('jwt', refreshToken, {
       httpOnly: true,
       maxAge: 24 * 60 * 60 * 1000,
