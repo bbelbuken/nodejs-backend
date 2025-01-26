@@ -26,3 +26,5 @@ Do NOT store in local storage or cookie
 Sent as httpOnly cookie
 Not accessible via JS
 Must have expiry at some point
+
+ <!-- require('crypto').randomBytes(64).toString('hex') to generate a token -->
