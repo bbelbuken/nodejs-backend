@@ -25,7 +25,34 @@ const handleLogin = async (req, res) => {
   const match = await bcrypt.compare(password, foundUser.password);
   if (match) {
     // create JWTs
-    res.json({ success: `User ${username} is logged in` });
+    // takes a payload, private key , duration
+    const accessToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.ACCESS_TOKEN_SECRET,
+      { expiresIn: '30s' }
+    );
+    const refreshToken = jwt.sign(
+      { username: foundUser.username },
+      process.env.REFRESH_TOKEN_SECRET,
+      { expiresIn: '1d' }
+    );
+
+    // Saving refreshToken with current user
+    const otherUsers = usersDB.users.filter(
+      (person) => person.username !== foundUser.username
+    );
+    const currentUser = { ...foundUser, refreshToken };
+    usersDB.setUsers([...otherUsers, currentUser]);
+    await fsPromises.writeFile(
+      path.join(__dirname, '..', 'model', 'users.json'),
+      JSON.stringify(usersDB.users)
+    );
+
+    res.cookie('jwt', refreshToken, {
+      httpOnly: true,
+      maxAge: 24 * 60 * 60 * 1000,
+    });
+    res.json({ accessToken });
   } else {
     res.sendStatus(401);
   }
