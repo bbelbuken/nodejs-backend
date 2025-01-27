@@ -7,11 +7,16 @@ const { logger } = require('./middleware/logEvents');
 const errorHandler = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
+const credentials = require('./middleware/credentials');
 const PORT = process.env.PORT || 3500;
 
 ////////////
 // Middlewares
 app.use(logger);
+
+// Handle options credentials check - must be before CORS!
+// and fetch cookies credentials requirement
+app.use(credentials);
 
 // Cross Origin Resource Sharing
 app.use(cors(corsOptions));
@@ -50,6 +55,7 @@ app.all('*', (req, res) => {
     res.type('txt').send('404 Not Found');
   }
 });
+successfuly;
 
 // custom error handling middleware
 app.use(errorHandler);
