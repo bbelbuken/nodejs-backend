@@ -442,3 +442,6 @@
 2025-01-27	00:02:15	e4c7d28d-b952-4dea-b5db-0a47ad716f90	GET	undefined	/refresh
 2025-01-27	00:02:16	6e286ec2-0779-4486-a502-8bb600c22367	GET	undefined	/refresh
 2025-01-27	00:02:16	af1ae917-893a-4224-b487-4ce6f4f1d49b	GET	undefined	/refresh
+2025-01-27	15:33:05	973b487e-de07-497d-952c-5cacc0a5fd05	POST	undefined	/auth
+2025-01-27	15:33:23	dd3b7b9c-8b11-41a0-9a0b-7e1d3efe15d6	GET	undefined	/logout
+2025-01-27	15:33:58	79a5708c-5cfa-4a28-b6f4-991a497693d5	GET	undefined	/refresh

@@ -1,7 +1,8 @@
 [
+    [],
     {
         "username": "bbelbuken",
         "password": "$2b$10$PgzwJYsMCPGI2kwdF/Pq7eMAQQ87YEXDdebBhewbpP.ZKkImkcTma",
-        "refreshToken": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJiZWxidWtlbiIsImlhdCI6MTczNzkyNTI5NywiZXhwIjoxNzM4MDExNjk3fQ.atnV9O7DKkieLyaQoc_nSuylJX-JSTRJB7_hSiy1YWM"
+        "refreshToken": ""
     }
 ]
