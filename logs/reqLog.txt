@@ -87,3 +87,13 @@
 2025-01-27	22:05:33	00dac5fd-7488-4e72-83be-2ca3734a4c1c	POST	undefined	/register
 2025-01-27	22:05:37	a633a17c-5f77-41d7-92f9-dae139fe1106	POST	undefined	/register
 2025-01-27	22:05:43	c81ebd21-d2ce-4d26-bfd4-ca383fd754f1	POST	undefined	/auth
+2025-01-27	22:46:50	c20baba2-fd96-43fa-aa02-ace74c5d8b56	GET	undefined	/
+2025-01-27	22:46:50	3e8e45d0-2a45-4dc1-8eed-bab28922e5c3	GET	undefined	/css/style.css
+2025-01-27	22:46:50	5de92989-20d3-47de-81a7-d3fb01e44808	GET	undefined	/favicon.ico
+2025-01-27	22:46:53	3250bb92-fd9e-493c-8e8b-4af53bf7bdfc	GET	undefined	/
+2025-01-27	22:46:53	6b40170b-8ac7-4221-872a-b86cd536c5cb	GET	undefined	/css/style.css
+2025-01-27	22:46:54	2fd0b8de-b760-49d5-a432-35df7c8df718	GET	undefined	/favicon.ico
+2025-01-27	22:47:18	b802ae8e-8694-42e6-9350-898f2d986e7c	GET	undefined	/employees
+2025-01-27	22:47:18	e84b17f2-9653-4141-826e-e407d065638b	GET	undefined	/favicon.ico
+2025-01-27	22:50:48	26384d07-38ba-4412-8a1c-240095e7e68e	GET	undefined	/employees
+2025-01-27	22:50:48	9d86a259-7bab-42e3-85ee-58e1c872e7c8	GET	undefined	/favicon.ico
