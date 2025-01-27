@@ -55,6 +55,7 @@ app.all('*', (req, res) => {
     res.type('txt').send('404 Not Found');
   }
 });
+successfuly;
 
 // custom error handling middleware
 app.use(errorHandler);
