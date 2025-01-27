@@ -22,12 +22,12 @@ const handleRefreshToken = (req, res) => {
   jwt.verify(refreshToken, process.env.REFRESH_TOKEN_SECRET, (err, decoded) => {
     if (err || foundUser.username !== decoded.username)
       return res.sendStatus(403); // Invalid token
-    const accesToken = jwt.sign(
+    const accessToken = jwt.sign(
       { username: decoded.username },
       process.env.ACCESS_TOKEN_SECRET,
       { expiresIn: '30s' }
     );
-    res.json({ accesToken });
+    res.json({ accessToken });
   });
 };
 
