@@ -1,3 +1,4 @@
+require('dotenv').config(); // * you can import this on top of everything once
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -8,7 +9,12 @@ const errorHandler = require('./middleware/errorHandler');
 const verifyJWT = require('./middleware/verifyJWT');
 const cookieParser = require('cookie-parser');
 const credentials = require('./middleware/credentials');
+const mongoose = require('mongoose');
+const connectDB = require('./config/dbConn');
 const PORT = process.env.PORT || 3500;
+
+// ? Connect to MongoDB
+connectDB();
 
 ////////////
 // Middlewares
@@ -59,4 +65,7 @@ app.all('*', (req, res) => {
 // custom error handling middleware
 app.use(errorHandler);
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+mongoose.connection.once('open', () => {
+  console.log('Connected to MongoDB');
+  app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+});
